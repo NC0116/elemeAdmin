@@ -10,6 +10,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -33,6 +34,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -43,13 +45,29 @@
       <recent name="D:\JAVA\JavaSECode\elemeAdmin\src" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestAdmin">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="com.neusoft.Main" />
+  <component name="RunManager" selected="Application.ElmAdmin">
+    <configuration name="BusinessAdmin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.neusoft.BusinessAdmin" />
       <module name="elemeAdmin" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.neusoft.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ElmAdmin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.neusoft.ElmAdmin" />
+      <module name="elemeAdmin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.neusoft.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -67,12 +85,45 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TextBusiness" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.neusoft.text.TextBusiness" />
+      <module name="elemeAdmin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.neusoft.text.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TextFood" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.neusoft.text.TextFood" />
+      <module name="elemeAdmin" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.neusoft.text.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Application.Main" />
       <item itemvalue="Application.TestAdmin" />
+      <item itemvalue="Application.TextBusiness" />
+      <item itemvalue="Application.ElmAdmin" />
+      <item itemvalue="Application.TextFood" />
+      <item itemvalue="Application.BusinessAdmin" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ElmAdmin" />
+        <item itemvalue="Application.BusinessAdmin" />
+        <item itemvalue="Application.TextBusiness" />
+        <item itemvalue="Application.TextFood" />
         <item itemvalue="Application.TestAdmin" />
       </list>
     </recent_temporary>
@@ -87,7 +138,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1596765317995</updated>
-      <workItem from="1596765323970" duration="4254000" />
+      <workItem from="1596765323970" duration="33761000" />
+      <workItem from="1596848712802" duration="331000" />
+      <workItem from="1596850174617" duration="24622000" />
+      <workItem from="1596938995368" duration="3130000" />
+      <workItem from="1597018699709" duration="8844000" />
     </task>
     <servers />
   </component>
@@ -95,29 +150,45 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="488" y="73" key="#com.intellij.ide.util.MemberChooser" timestamp="1596767975245">
+    <state x="488" y="73" key="#com.intellij.ide.util.MemberChooser" timestamp="1597028051515">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="488" y="73" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1596767975245" />
+    <state x="488" y="73" key="#com.intellij.ide.util.MemberChooser/0.0.1366.728@0.0.1366.728" timestamp="1597028051515" />
     <state x="413" y="140" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1596766809819">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="140" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1366.728@0.0.1366.728" timestamp="1596766809819" />
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom" timestamp="1596769377234">
+    <state x="462" y="248" width="441" height="240" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1597023416091">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1596769377234" />
-    <state width="1323" height="179" key="GridCell.Tab.0.center" timestamp="1596769377233">
+    <state x="462" y="248" width="441" height="240" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1366.728@0.0.1366.728" timestamp="1597023416091" />
+    <state width="1323" height="154" key="GridCell.Tab.0.bottom" timestamp="1597026265539">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1596769377233" />
-    <state width="1323" height="179" key="GridCell.Tab.0.left" timestamp="1596769377233">
+    <state width="1323" height="154" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1597026265539" />
+    <state width="1323" height="154" key="GridCell.Tab.0.center" timestamp="1597026265539">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1596769377233" />
-    <state width="1323" height="179" key="GridCell.Tab.0.right" timestamp="1596769377234">
+    <state width="1323" height="154" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1597026265539" />
+    <state width="1323" height="154" key="GridCell.Tab.0.left" timestamp="1597026265539">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1596769377234" />
+    <state width="1323" height="154" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1597026265539" />
+    <state width="1323" height="154" key="GridCell.Tab.0.right" timestamp="1597026265539">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1323" height="154" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1597026265539" />
+    <state x="184" y="6" key="SettingsEditor" timestamp="1596849037745">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="184" y="6" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1596849037745" />
+    <state x="363" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1597018700832">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="363" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1597018700832" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1597024002041">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1597024002041" />
   </component>
 </project>

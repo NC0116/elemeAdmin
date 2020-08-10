@@ -32,9 +32,40 @@ public class AdminDaoImpl implements AdminDao {
 
             } catch (SQLException e) {
                 e.printStackTrace();
+            }finally {
+                JDBCUtils.close(pstmt,conn,rs);
             }
+            return ad;
+    }
+
+    @Override
+    public void save(Admin admin1) {
 
 
-        return ad;
+        try{
+            conn = JDBCUtils.getConnection();
+            String sql="insert into admin values(?,?,?)";
+            pstmt = conn.prepareStatement(sql);
+            pstmt.setInt(1,admin1.getAdminId());
+            pstmt.setString(2,admin1.getAdminName());
+            pstmt.setString(3,admin1.getPossWord());
+            int  count = pstmt.executeUpdate();
+            System.out.println("添加成功，影响行数"+count);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }finally {
+            JDBCUtils.close(pstmt,conn,rs);
+        }
+    }
+
+
+    @Override
+    public Admin update(Integer id, String adminName, String passWord) {
+        return null;
+    }
+
+    @Override
+    public Admin delete(Integer id) {
+        return null;
     }
 }

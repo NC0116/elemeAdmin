@@ -10,5 +10,10 @@ public class TestAdmin {
         Admin admin= adminDao.getAdminByNameByPass("zhangsan","123");
         System.out.println(admin);
 
+        System.out.println("=================添加");
+        Admin admin1 = new Admin(2,"李四","234");
+
+
+
     }
 }
