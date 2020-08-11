@@ -4,13 +4,13 @@ public class Food {
 private Integer foodId;
 private String foodName;
     private String foodExplain;
-    private Integer foodPrice;
+    private Double foodPrice;
     private Integer businessId;
 
     public Food() {
     }
 
-    public Food(Integer foodId, String foodName, String foodExplain, Integer foodPrice, Integer businessId) {
+    public Food(Integer foodId, String foodName, String foodExplain, Double foodPrice, Integer businessId) {
         this.foodId = foodId;
         this.foodName = foodName;
         this.foodExplain = foodExplain;
@@ -42,11 +42,11 @@ private String foodName;
         this.foodExplain = foodExplain;
     }
 
-    public Integer getFoodPrice() {
+    public Double getFoodPrice() {
         return foodPrice;
     }
 
-    public void setFoodPrice(Integer foodPrice) {
+    public void setFoodPrice(Double foodPrice) {
         this.foodPrice = foodPrice;
     }
 

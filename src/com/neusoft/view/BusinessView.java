@@ -12,5 +12,9 @@ public interface BusinessView {
     //商家登录
     public Business login();
     //显示商家信息
-    public void showBusinessInfo();
+    public void showBusinessInfo(Integer businessID);
+    //修改商家信息
+    public void updateBusinessInfo(Integer businessID);
+    //更新密码
+    public void updateBusinessID(Integer businessID);
 }

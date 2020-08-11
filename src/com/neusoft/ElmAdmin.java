@@ -42,8 +42,6 @@ public class ElmAdmin {
                         break;
                     case 2:
                         businessView.listBusinessBySearchAll();
-                        foodView.listFoodBySearchAll();
-                        System.out.println("======1.查看商家食物=2.新建食物=3.删除食物=4.退出操作");
 
                         break;
                     case 3:

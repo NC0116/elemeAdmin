@@ -12,9 +12,11 @@ import com.neusoft.view.Impl.FoodViewImpl;
 import java.util.Scanner;
 
 public class BusinessAdmin {
+
     public static void main(String[] args) {work();}
+
         public static  void  work(){
-            Scanner input = new Scanner(System.in);
+
 
             System.out.println("-----------------------------------------------------------");
             System.out.println("|\t\t\t\t饿了么控制台版后台管理系统 V1.0\t\t\t\t|");
@@ -23,7 +25,7 @@ public class BusinessAdmin {
             // 调用登录方法
             BusinessView businessView = new BusinessViewImpl();
            Business business = businessView.login();
-
+            Scanner input = new Scanner(System.in);
            if (business!=null){
                 int menu = 0;
                 System.out.println("~欢迎来到饿了么商家管理系统~");
@@ -35,17 +37,18 @@ public class BusinessAdmin {
                     menu = input.nextInt();
                     switch (menu){
                         case 1:
-
+                               businessView.showBusinessInfo(business.getBusinessId());
                             break;
-                        case 2:
 
-
-                            break;
+                            case 2:
+                              businessView.updateBusinessInfo(business.getBusinessId());
+                              break;
                         case 3:
 
+                             businessView.updateBusinessID(business.getBusinessId());
                             break;
                         case 4:
-
+                          foodManage(business.getBusinessId());
                             break;
                         case 5:
                             System.out.println("========= 欢迎下次光临饿了么系统 =========");
@@ -61,5 +64,46 @@ public class BusinessAdmin {
 
         }
 
+
+    private  static  void foodManage(int businessId){
+        Scanner input = new Scanner(System.in);
+        FoodView foodView = new FoodViewImpl();
+        int menu = 0;
+        while (menu!= 5){
+
+            // 创建一个菜单
+            System.out.println("========= 二级菜单（美食管理）1.查看食品列表2.新增食品 3.修改食品=4.删除食品=5.返回一级菜单 =========");
+            System.out.println("请选择相应的菜单编号");
+            menu = input.nextInt();
+
+            switch (menu){
+                case 1:
+                    foodView.listFoodBySearchAll(businessId);
+                    break;
+                case 2:
+                    foodView.saveFood(businessId);
+
+                    break;
+                case 3:
+                   foodView.updateFood(businessId);
+
+                    break;
+                case 4:
+                    foodView.removeFood(businessId);
+
+                    break;
+                case 5:
+                    System.out.println("返回一级菜单");
+                    break;
+                default:
+                    System.out.println("没有这个菜单项");
+                    break;
+            }
+
+        }
+
     }
 
+
+
+}
